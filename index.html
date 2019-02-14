@@ -11,14 +11,170 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+    <style>
+        .kaushan {
+            font-family: 'Kaushan Script', cursive;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 20px 0 20px;
+            position: relative;
+        }
+
+        .timeline:before {
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            content: " ";
+            width: 3px;
+            background-color: #eeeeee;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+
+        .timeline>li {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline>li:before,
+        .timeline>li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline>li:after {
+            clear: both;
+        }
+
+        .timeline>li:before,
+        .timeline>li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline>li:after {
+            clear: both;
+        }
+
+        .timeline>li>.timeline-panel {
+            width: 46%;
+            float: left;
+            border: 1px solid #d4d4d4;
+            border-radius: 2px;
+            padding: 20px;
+            position: relative;
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        }
+
+        .timeline>li>.timeline-panel:before {
+            position: absolute;
+            top: 26px;
+            right: -15px;
+            display: inline-block;
+            border-top: 15px solid transparent;
+            border-left: 15px solid #ccc;
+            border-right: 0 solid #ccc;
+            border-bottom: 15px solid transparent;
+            content: " ";
+        }
+
+        .timeline>li>.timeline-panel:after {
+            position: absolute;
+            top: 27px;
+            right: -14px;
+            display: inline-block;
+            border-top: 14px solid transparent;
+            border-left: 14px solid #fff;
+            border-right: 0 solid #fff;
+            border-bottom: 14px solid transparent;
+            content: " ";
+        }
+
+        .timeline>li>.timeline-badge {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            margin-left: -25px;
+            background-color: #999999;
+            z-index: 100;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .timeline>li.timeline-inverted>.timeline-panel {
+            float: right;
+        }
+
+        .timeline>li.timeline-inverted>.timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        .timeline>li.timeline-inverted>.timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+
+        .timeline-badge.primary {
+            background-color: #2e6da4 !important;
+        }
+
+        .timeline-badge.success {
+            background-color: #3f903f !important;
+        }
+
+        .timeline-badge.warning {
+            background-color: #f0ad4e !important;
+        }
+
+        .timeline-badge.danger {
+            background-color: #d9534f !important;
+        }
+
+        .timeline-badge.info {
+            background-color: #5bc0de !important;
+        }
+
+        .timeline-title {
+            margin-top: 0;
+            color: inherit;
+        }
+
+        .timeline-body>p,
+        .timeline-body>ul {
+            margin-bottom: 0;
+        }
+
+        .timeline-body>p+p {
+            margin-top: 5px;
+        }
+    </style>
 
     <title>Irfan Hadian</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Irfan Hadian</a>
+            <a class="navbar-brand kaushan" href="#">Irfan Hadian</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,46 +197,216 @@
             </div>
         </div>
     </nav>
+    <!-- /navbar -->
 
     <!-- jumbotron-fluid -->
     <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center"
         style="height: 100vh;">
-        <h1 class="display-4">Welcome to My Portfolio</h1>
+        <h1 class="display-4 text-center">Welcome to My Portfolio</h1>
         <p class="lead">I'm Junior Web / Android Programmer.</p>
         <button type="button" class="btn btn-outline-primary">Tell Me More</button>
     </div>
 
-    <div class="d-flex flex-column justify-content-center align-items-center">
-        <h1>Skill</h1>
-        <i>An explanation of my ability.</i>
-    </div>
-
-    <div class="container">
+    <!-- skill -->
+    <div class="container py-5">
+        <div class="d-flex flex-column justify-content-center align-items-center py-5">
+            <h1>Skill</h1>
+            <i>An explanation of my ability.</i>
+        </div>
 
         <div class="row">
-            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-html5 fa-10x"></i>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
                 <div class="text-center">
-                    <h1>HTML</h1>
-                    <h1>90%</h1>
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
                 </div>
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-html5 fa-10x"></i>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
                 <div class="text-center">
-                    <h1>HTML</h1>
-                    <h1>90%</h1>
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
                 </div>
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-html5 fa-10x"></i>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
                 <div class="text-center">
-                    <h1>HTML</h1>
-                    <h1>90%</h1>
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
+                <div class="text-center">
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
+                <div class="text-center">
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
+                <div class="text-center">
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
+                <div class="text-center">
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
+                <div class="text-center">
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <i class="fab fa-html5 fa-7x py-3"></i>
+                <div class="text-center">
+                    <h5 class="font-weight-bold">HTML</h5>
+                    <h2 class="font-weight-bolder">90%</h2>
                 </div>
             </div>
         </div>
     </div>
+    <!-- /skill -->
+
+    <!-- portfolio -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="d-flex flex-column align-items-center py-5">
+            <h1>Portfolio</h1>
+            <i>This is my portfolio.</i>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 py-3 rounded">
+                    <div class="text-center bg-white p-4 rounded">
+                        <h4 class="font-weight-bold">Library Management System</h4>
+                        <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3 rounded">
+                    <div class="text-center bg-white p-4 rounded">
+                        <h4 class="font-weight-bold">Library Management System</h4>
+                        <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3 rounded">
+                    <div class="text-center bg-white p-4 rounded">
+                        <h4 class="font-weight-bold">Library Management System</h4>
+                        <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3 rounded">
+                    <div class="text-center bg-white p-4 rounded">
+                        <h4 class="font-weight-bold">Library Management System</h4>
+                        <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3 rounded">
+                    <div class="text-center bg-white p-4 rounded">
+                        <h4 class="font-weight-bold">Library Management System</h4>
+                        <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 py-3 rounded">
+                    <div class="text-center bg-white p-4 rounded">
+                        <h4 class="font-weight-bold">Library Management System</h4>
+                        <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /portfolio -->
+
+    <!-- about -->
+    <div class="container">
+        <div class="d-flex flex-column align-items-center py-5">
+            <h1>About Me</h1>
+            <blockquote class="blockquote">
+                <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                </p>
+            </blockquote>
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1 id="timeline">EDUCATIONS</h1>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge success"><i class="fas fa-school"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">SMK TEKNOLOGI PLUS PADJADJARAN</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Major: Computer and Network Engineering</p>
+                            <p>2013 - 2016</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning"><i class="fas fa-user-graduate"></i></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Universitas Nusa Putra *ON PROCESS</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Major: Informatics Engineering</p>
+                            <p>2017 - 2021</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /about -->
+
+    <!-- download -->
+    <div class="container-fluid py-5 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <a href="#" class="btn btn-success btn-block">Download My CV</a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <a href="#" class="btn btn-success btn-block">Download My Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /download -->
+
+    <!-- footer -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <p class="text-muted text-center">Copyright &copy; Irfan Hadian 2019</p>
+                </div>
+                <div class="col-md-4 col-sm-12"></div>
+                <div class="col-md-4 col-sm-12">
+                    <p class="text-muted text-center"><i class="far fa-envelope"></i>
+                        irfan.hadian10@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
