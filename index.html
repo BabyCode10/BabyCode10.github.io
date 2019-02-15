@@ -11,11 +11,19 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville:400i" rel="stylesheet">
 
     <style>
+        * {
+            color: EBECE8;
+        }
+
         .kaushan {
             font-family: 'Kaushan Script', cursive;
+        }
+
+        .baskerville {
+            font-family: 'Libre Baskerville', serif;
         }
 
         .timeline {
@@ -30,7 +38,7 @@
             position: absolute;
             content: " ";
             width: 3px;
-            background-color: #eeeeee;
+            background-color: #292529;
             left: 50%;
             margin-left: -1.5px;
         }
@@ -69,6 +77,8 @@
             position: relative;
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            background-color: #292529;
+            color: #EBECE8;
         }
 
         .timeline>li>.timeline-panel:before {
@@ -89,8 +99,8 @@
             right: -14px;
             display: inline-block;
             border-top: 14px solid transparent;
-            border-left: 14px solid #fff;
-            border-right: 0 solid #fff;
+            border-left: 14px solid #292529;
+            border-right: 0 solid #292529;
             border-bottom: 14px solid transparent;
             content: " ";
         }
@@ -165,14 +175,21 @@
         .timeline-body>p+p {
             margin-top: 5px;
         }
+
+        .jumbotron {
+            height: 100vh;
+            background: linear-gradient(rgb(41, 37, 41, .75), rgb(41, 37, 41, .75)), url(img/jumbotron-img.jpg);
+            background-position: center;
+            background-size: cover;
+        }
     </style>
 
     <title>Irfan Hadian</title>
 </head>
 
-<body>
+<body style="background-color: #292529;">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #5E736E;">
         <div class="container">
             <a class="navbar-brand kaushan" href="#">Irfan Hadian</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -200,37 +217,35 @@
     <!-- /navbar -->
 
     <!-- jumbotron-fluid -->
-    <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center"
-        style="height: 100vh;">
-        <h1 class="display-4 text-center">Welcome to My Portfolio</h1>
-        <p class="lead">I'm Junior Web / Android Programmer.</p>
-        <button type="button" class="btn btn-outline-primary">Tell Me More</button>
+    <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center text-white">
+        <h1 class="text-center baskerville">Welcome to My Portfolio</h1>
+        <h2 class="text-center baskerville">I'm Junior Web / Android Programmer.</h2>
     </div>
 
     <!-- skill -->
-    <div class="container">
+    <div class="container shadow rounded" style="background-color: #EBECE8; margin-top: -5rem; margin-bottom: 5rem;">
         <div class="d-flex flex-column justify-content-center align-items-center py-5">
             <h1>Skill</h1>
-            <i>An explanation of my ability.</i>
+            <p class="baskerville">An explanation of my ability.</p>
         </div>
 
         <div class="row pb-5">
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-html5 fa-7x py-3"></i>
+                <i style="color: #e67e22;" class="fab fa-html5 fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">HTML</h5>
                     <h2 class="font-weight-bolder">90%</h2>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-css3-alt fa-7x py-3"></i>
+                <i style="color: #3498db;" class="fab fa-css3-alt fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">CSS</h5>
                     <h2 class="font-weight-bolder">90%</h2>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-php fa-7x py-3"></i>
+                <i style="color: #2980b9;" class="fab fa-php fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">PHP</h5>
                     <h2 class="font-weight-bolder">85%</h2>
@@ -240,21 +255,21 @@
 
         <div class="row pb-5">
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-js fa-7x py-3"></i>
+                <i style="color: #f1c40f;" class="fab fa-js fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">JavaScript</h5>
                     <h2 class="font-weight-bolder">80%</h2>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-java fa-7x py-3"></i>
+                <i style="color: #e74c3c;" class="fab fa-java fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">JAVA</h5>
                     <h2 class="font-weight-bolder">60%</h2>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-laravel fa-7x py-3"></i>
+                <i style="color: #e74c3c;" class="fab fa-laravel fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">Laravel</h5>
                     <h2 class="font-weight-bolder">85%</h2>
@@ -264,21 +279,21 @@
 
         <div class="row pb-5">
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fab fa-react fa-7x py-3"></i>
+                <i style="color: #2980b9;" class="fab fa-react fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">React Native</h5>
                     <h2 class="font-weight-bolder">75%</h2>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fas fa-code fa-7x py-3"></i>
+                <i style="color: #9b59b6;" class="fas fa-code fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">Bootstrap</h5>
                     <h2 class="font-weight-bolder">90%</h2>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                <i class="fas fa-code-branch fa-7x py-3"></i>
+                <i style="color: #e74c3c;" class="fas fa-code-branch fa-5x py-3"></i>
                 <div class="text-center">
                     <h5 class="font-weight-bold">GIT</h5>
                     <h2 class="font-weight-bolder">40%</h2>
@@ -289,29 +304,29 @@
     <!-- /skill -->
 
     <!-- portfolio -->
-    <div style="min-height: 100vh;" class="container-fluid bg-light">
+    <div style="min-height: 100vh; background-color: #EBECE8;" class="container-fluid border-bottom">
         <div class="d-flex flex-column align-items-center py-5">
             <h1>Portfolio</h1>
-            <i>This is my portfolio.</i>
+            <p class="baskerville">This is my portfolio.</p>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6 py-3 rounded">
+                <div class="col-md-4 col-sm-6 py-3">
                     <a style="text-decoration: none;" href="https://github.com/BabyCode10/Library-Management-System">
-                        <div style="min-height: 150px;"
-                            class="d-flex flex-column justify-content-center align-items-center text-center bg-white text-dark p-4 rounded">
-                            <h4 class="font-weight-bold">Library Management System</h4>
-                            <h7 class="font-weight-bolder text-muted">Create Management System with Laravel</h7>
+                        <div style="min-height: 150px; background-color: #292529; color: #EBECE8;"
+                            class="d-flex flex-column justify-content-center align-items-center text-center p-4 rounded shadow-lg">
+                            <h4 class="font-weight-bolder">Library Management System</h4>
+                            <h7 class="font-weight-light">Laravel</h7>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 py-3 rounded">
-                    <a class="text-decoration-none" href="https://github.com/BabyCode10/Library-Management-System">
-                        <div style="min-height: 150px;"
-                            class="d-flex flex-column justify-content-center align-items-center text-center bg-white text-dark p-4 rounded">
-                            <h4 class="font-weight-bold">Persib App <span class="text-danger">*WIP</span></h4>
-                            <h7 class="font-weight-bolder text-muted">React Native + Redux</h7>
+                <div class="col-md-4 col-sm-6 py-3">
+                    <a style="text-decoration: none;" href="https://github.com/BabyCode10/Library-Management-System">
+                        <div style="min-height: 150px; background-color: #292529; color: #EBECE8;"
+                            class="d-flex flex-column justify-content-center align-items-center text-center p-4 rounded shadow-lg">
+                            <h4 class="font-weight-bolder">Persib App <span class="text-warning">*WIP</span></h4>
+                            <h7 class="font-weight-light">React Native + Redux</h7>
                         </div>
                     </a>
                 </div>
@@ -321,7 +336,7 @@
     <!-- /portfolio -->
 
     <!-- about -->
-    <div class="container">
+    <div class="container-fluid py-3" style="background-color: #EBECE8;">
         <div class="d-flex flex-column align-items-center py-5">
             <h1>About Me</h1>
             <blockquote class="blockquote text-center">
@@ -338,7 +353,7 @@
             <ul class="timeline">
                 <li>
                     <div class="timeline-badge success"><i class="fas fa-building"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel rounded">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">RSUD R. SYAMSUDIN, SH</h4>
                         </div>
@@ -350,7 +365,7 @@
                 </li>
                 <li class="timeline-inverted">
                     <div class="timeline-badge success"><i class="fas fa-school"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel rounded">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">SMK TEKNOLOGI PLUS PADJADJARAN</h4>
                         </div>
@@ -362,9 +377,10 @@
                 </li>
                 <li>
                     <div class="timeline-badge warning"><i class="fas fa-user-graduate"></i></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel rounded">
                         <div class="timeline-heading">
-                            <h4 class="timeline-title">Universitas Nusa Putra *ON PROCESS</h4>
+                            <h4 class="timeline-title">Universitas Nusa Putra <span class="text-warning">*ON
+                                    PROCESS</span></h4>
                         </div>
                         <div class="timeline-body">
                             <p>Department: Informatics Engineering</p>
@@ -393,7 +409,7 @@
     <!-- /download -->
 
     <!-- footer -->
-    <div class="container-fluid bg-light py-5">
+    <div style="background-color: #EBECE8;" class="container-fluid py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
