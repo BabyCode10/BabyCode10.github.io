@@ -1,11 +1,10 @@
 * {
-    color: EBECE8;
     font-family: 'Tajawal', sans-serif;
 }
 
 body {
     position: relative;
-    background-color: #292529;
+    background-color: #6242F0;
 }
 
 .kaushan {
@@ -27,25 +26,30 @@ body {
     font-size: 20px;
 }
 
-.nav-animate {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    background-color: #5E736E;
-}
-
 .skill {
-    background-color: #EBECE8;
+    background-color: #F7F6ED;
     margin-top: -5rem;
     margin-bottom: 5rem;
 }
 
 .portfolio {
     min-height: 100vh;
-    background-color: #EBECE8;
+    background-color: #F7F6ED;
+}
+
+.portfolio-section {
+    min-height: 150px;
+    background-color: #6242F0;
+    color: #F7F6ED;
 }
 
 .about {
-    background-color: #EBECE8;
+    background-color: #F7F6ED;
+}
+
+.btn-success {
+    background-color: #7e9357;
+    border-color: #7e9357;
 }
 
 .timeline {
@@ -99,8 +103,8 @@ body {
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    background-color: #292529;
-    color: #EBECE8;
+    background-color: #6242F0;
+    color: #F7F6ED;
 }
 
 .timeline>li>.timeline-panel:before {
@@ -121,8 +125,8 @@ body {
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #292529;
-    border-right: 0 solid #292529;
+    border-left: 14px solid #6242F0;
+    border-right: 0 solid #6242F0;
     border-bottom: 14px solid transparent;
     content: " ";
 }
@@ -169,11 +173,11 @@ body {
 }
 
 .timeline-badge.success {
-    background-color: #3f903f !important;
+    background-color: #7e9357 !important;
 }
 
 .timeline-badge.warning {
-    background-color: #f0ad4e !important;
+    background-color: #fc831f !important;
 }
 
 .timeline-badge.danger {
@@ -200,13 +204,13 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: linear-gradient(rgb(41, 37, 41, .75), rgb(41, 37, 41, .75)), url(img/jumbotron-img.jpg);
+    background: linear-gradient(rgb(98, 66, 240), rgb(98, 66, 240));
     background-position: center;
     background-size: cover;
 }
 
 @media (max-width: 992px) {
     nav {
-        background: #292529 !important; /*Add your own background*/
+        background: #F45366 !important; /*Add your own background*/
     }
 }
