@@ -1,9 +1,10 @@
 * {
     color: EBECE8;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 body {
+    position: relative;
     background-color: #292529;
 }
 
@@ -17,12 +18,13 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
-.Raleway {
-    font-family: 'Raleway', sans-serif;
-}
-
 .navbar {
     transition: .5s;
+}
+
+.navbar-nav {
+    transition: .5s;
+    font-size: 20px;
 }
 
 .nav-animate {
@@ -205,6 +207,6 @@ body {
 
 @media (max-width: 992px) {
     nav {
-        background: #5E736E !important; /*Add your own background*/
+        background: #292529 !important; /*Add your own background*/
     }
 }
