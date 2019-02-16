@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    new TypeIt('#jumbotron-text', {
+        strings: ['<span class="ubuntu font-weight-bold" style="font-size: 38px;">Welcome to My Portfolio</span>', '<span class="ubuntu" style="font-size: 28px;">I\'m Junior Web / Android Programmer.</span>'],
+        speed: 50,
+        waitUntilVisible: true,
+        loop: true,
+        loopDelay: 5000
+    }).go();
+
     // scroll function
     $(window).on('scroll', function () {
         // if scroll not in top
