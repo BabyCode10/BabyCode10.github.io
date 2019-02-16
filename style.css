@@ -223,3 +223,9 @@ body {
         background: #151B19 !important; /*Add your own background*/
     }
 }
+
+@media (max-width: 540px) {
+    .timeline-title {
+        font-size: 16px;
+    }
+}
