@@ -5,7 +5,7 @@ $(document).ready(function () {
         // if scroll not in top
         if ($(window).scrollTop()) {
             $('nav').css({
-                'background-color': '#F45366',
+                'background-color': '#151B19',
             });
             $('nav').removeClass('pt-4');
             $('.kaushan').css('font-size', '20px');

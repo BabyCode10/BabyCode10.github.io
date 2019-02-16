@@ -4,7 +4,7 @@
 
 body {
     position: relative;
-    background-color: #6242F0;
+    background-color: #151B19;
 }
 
 .kaushan {
@@ -39,7 +39,7 @@ body {
 
 .portfolio-section {
     min-height: 150px;
-    background-color: #6242F0;
+    background-color: #151B19;
     color: #F7F6ED;
 }
 
@@ -48,8 +48,17 @@ body {
 }
 
 .btn-success {
-    background-color: #7e9357;
-    border-color: #7e9357;
+    background-color: #4b8761;
+    border-color: #4b8761;
+}
+
+.btn-success:hover {
+    background-color: rgb(75, 135, 97, .3);
+    border-color: rgb(75, 135, 97, .3);
+}
+
+.text-warning {
+    color: #c97729;
 }
 
 .timeline {
@@ -103,7 +112,7 @@ body {
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    background-color: #6242F0;
+    background-color: #151B19;
     color: #F7F6ED;
 }
 
@@ -125,8 +134,8 @@ body {
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #6242F0;
-    border-right: 0 solid #6242F0;
+    border-left: 14px solid #151B19;
+    border-right: 0 solid #151B19;
     border-bottom: 14px solid transparent;
     content: " ";
 }
@@ -173,11 +182,11 @@ body {
 }
 
 .timeline-badge.success {
-    background-color: #7e9357 !important;
+    background-color: #4b8761 !important;
 }
 
 .timeline-badge.warning {
-    background-color: #fc831f !important;
+    background-color: #c97729 !important;
 }
 
 .timeline-badge.danger {
@@ -204,13 +213,13 @@ body {
 
 .jumbotron {
     height: 100vh;
-    background: linear-gradient(rgb(98, 66, 240), rgb(98, 66, 240));
+    background: linear-gradient(rgb(21, 27, 25, .75), rgb(21, 27, 25, .75)), url("./img/jumbotron-img.jpg");
     background-position: center;
     background-size: cover;
 }
 
 @media (max-width: 992px) {
     nav {
-        background: #F45366 !important; /*Add your own background*/
+        background: #151B19 !important; /*Add your own background*/
     }
 }
