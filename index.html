@@ -11,7 +11,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville:400i|Tajawal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville:400i|Tajawal|Ubuntu"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/icons/html2.png">
 
@@ -49,8 +50,9 @@
 
     <!-- jumbotron-fluid -->
     <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center text-white">
-        <h1 class="text-center baskerville">Welcome to My Portfolio</h1>
-        <h2 class="text-center baskerville">I'm Junior Web / Android Programmer.</h2>
+        <div class="baskerville text-center">
+            <h1 id="jumbotron-text"></h1>
+        </div>
     </div>
 
     <!-- skill -->
@@ -235,11 +237,11 @@
     <!-- contact -->
     <div id="contact" class="contact container-fluid py-5 text-white">
         <div class="container">
-            <div class="d-flex flex-column align-items-center py-5">
+            <div class="d-flex flex-column align-items-center py-3">
                 <h1 class="baskerville">Contact Me</h1>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center border-right py-5">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center border-right py-3">
                     <img style="height: 175px; width: 175px;" class="img-fluid" src="img/icons/letter.png" alt="letter">
                 </div>
                 <div class="col-md-6 col-sm-12 px-5 py-5">
@@ -270,7 +272,8 @@
                     <a href="#" class="btn btn-success btn-block">Download My CV</a>
                 </div>
                 <div class="col-md-6 col-sm-12 pb-2">
-                    <a href="#" class="btn btn-success btn-block">Download My Certificate</a>
+                    <a href="https://www.dropbox.com/sh/f5gl2fomzl5kfjs/AACgySlRw2p8J40bIUNJnn9Ua?dl=0"
+                        class="btn btn-success btn-block" target="_blank">Download My Certificate</a>
                 </div>
             </div>
         </div>
@@ -317,6 +320,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6/dist/typeit.min.js"></script>
+    <script>
+        new TypeIt('#jumbotron-text', {
+            strings: ['<span class="ubuntu" style="font-size: 38px;">Welcome to My Portfolio</span>', '<span class="ubuntu" style="font-size: 28px;">I\'m Junior Web / Android Programmer.</span>'],
+            speed: 50,
+            waitUntilVisible: true,
+            loop: true,
+            loopDelay: 5000
+        }).go();
+    </script>
     <script src="index.js"></script>
 </body>
 

@@ -17,6 +17,10 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .navbar {
     transition: .5s;
 }
