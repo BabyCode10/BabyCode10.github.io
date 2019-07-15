@@ -9,7 +9,7 @@ $(document).ready(function () {
         .type('<span class="baskerville font-weight-bold" style="font-size: 38px;">Welcome to My Portfolio</span>')
         .pause(2000)
         .break()
-        .type('<span class="baskerville" style="font-size: 28px;">I\'m Junior Web / Android Programmer.</span>')
+        .type('<span class="baskerville" style="font-size: 28px;">I\'m Web Developer.</span>')
         .go();
 
     // scroll function
